@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.typeTxt .text {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.typeTxt .text.first {
+    color: white;
+
+}
+.bg-Image{
+    background-color: black !important;
+  height: 100vh !important;
+}
+/* backgroundColor: "black", maxHeight: "100vh" */
+
+.typeTxt .text.sec:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    animation: animate 4s steps(12) infinite;
+
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+
+    }
+
+    100% {
+        left: 0%;
+    }
+}
